@@ -1,0 +1,230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+
+    <style>
+        #abc
+        {
+            color: whitesmoke;
+        }
+        #def
+        {
+            color: white;
+        }
+        #xyz
+        {
+            background: rgba(0, 0, 0, 0.01);
+        }
+    </style>
+</head>
+<body>
+    <!-- main navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://getbootstrap.com/docs/4.6/components/navbar/" target="_blank">
+            <img src="{% static 'images/ass-8.3.jpg' %}" width="30" height="30" class="d-inline-block align-top mr-2"alt="img...">Bootstrap
+        </a>
+
+        <!-- for mediuam screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- all links upto disabled -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="https://getbootstrap.com/" target="_blank">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://en.wikipedia.org/wiki/Sunil_Chhetri" target="_blank">Sunil_Chhetri</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Satish details
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="https://in.linkedin.com/in/veera-venkata-satish-kumar-yanala-85700717b" target="_blank">Linkedin</a>
+                <a class="dropdown-item" href="https://www.facebook.com/public/Satish-Yanala" target="_blank">Facebook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.instagram.com/satishkumaryanala/" target="_blank">instagram</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+            </ul>
+
+            <!-- form group search and buttons as well  -->
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        
+    </nav>
+
+
+    <!-- carousel examples -->
+    <center>
+        <h2>This is downlaod method in the bootstrap files</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/nature.jpg' %}" class="d-block w-100" alt="img not found" height="400px">
+                <div class="carousel-caption d-none d-md-block">
+                <h5 id="abc">Revenant </h5>
+                <p id="abc">this is a si-fi movie which involeves a person and his bravery while ssaving the kinds</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/evening.jpg' %}" class="d-block w-100" alt="img not found" height="400px">
+                <div class="carousel-caption d-none d-md-block">
+                <h5 id="abc">Tenet</h5>
+                <p id="abc">It is a Si-Fi movie which includes the reverse universon and time travels and nerver breaking situations which the hero come across</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/image hills.jpg' %}" class="d-block w-100" alt="img not found" height="400px">
+                <div class="carousel-caption d-none d-md-block">
+                <h5 id="abc">Topgun</h5>
+                <p id="abc">it is a defense based movie and tomcruse adventure actions a swell</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev" id="xyz">
+            <span class="carousel-control-prev-icon"><h1 id="def"><</h1></span>
+            <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next" id="xyz">
+            <span class="carousel-control-next-icon" ><h1 id="def">></h1></span>
+            <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </center>
+
+    <!-- cards examples with grid -->
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/dhoni.jpg' %}" class="card-img-top" alt="img not found">
+                    <div class="card-body">
+                      <h5 class="card-title">MS Dhoni</h5>
+                      <p class="card-text">He is the best finisher of all time and Mr. captain cool</p>
+                      <a href="https://en.wikipedia.org/wiki/MS_Dhoni" class="btn btn-primary" target="_blank">Click here to know more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/virat.jpg' %}" class="card-img-top" alt="img not found">
+                    <div class="card-body">
+                      <h5 class="card-title">Virat Kohli</h5>
+                      <p class="card-text">He is the most aggresive captain and have so may records</p>
+                      <a href="https://en.wikipedia.org/wiki/Virat_Kohli" class="btn btn-primary" target="_blank">Click here to know more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/rohit.jpg' %}" class="card-img-top" alt="img not found">
+                    <div class="card-body">
+                      <h5 class="card-title">Rohit sharma</h5>
+                      <p class="card-text">Captain of indian cricket team and he is also known as hitman.</p>
+                      <a href="https://en.wikipedia.org/wiki/Rohit_Sharma" class="btn btn-primary" target="_blank">Click here to know more</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/hardik.jpg' %}" class="card-img-top" alt="img not found">
+                    <div class="card-body">
+                      <h5 class="card-title">Hardik pandya</h5>
+                      <p class="card-text">He is the dangerous and psycho all-rounder in indian cricket team</p>
+                      <a href="https://en.wikipedia.org/wiki/Hardik_Pandya" class="btn btn-primary">Click here to know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- data toggle or collapse examples -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                collapseFunc with a-Tag
+            </a>
+            <div class="collapse multi-collapse" id="collapseExample">
+                <div class="card card-body">
+                  this is for anchor tag content. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button class="btn btn-outline-success" type="button" data-toggle="collapse" data-target="#abcd" aria-expanded="false" aria-controls="abcd">
+                Button with data-target
+            </button>
+            <div class="collapse multi-collapse" id="abcd">
+                <div class="card card-body">
+                  this is for button tag content. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#widthcollapse" aria-expanded="false" aria-controls="widthcollapse">
+                Toggle width collapse
+            </button>
+            <div class="collapse width multi-collapse" id="widthcollapse">
+                <div class="card card-body" style="width: 350px;">
+                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit 
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="abcd widthcollapse collapseExample collapseExample2">Toggle all 4 elements</button>
+            <div class="collapse multi-collapse" id="collapseExample2">
+                <div class="card card-body">
+                  This is for all toggle tag contents. Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jambotron contents -->
+<div class="jumbotron mt-3">
+    <h1 class="display-5">Satish kumar yanala!</h1>
+    <p class="lead">This is a simple Satish kumar details!, He can do coding good and can create pages with good and asethitic look. he is learning django write now. a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>This is all about satish kumar. We can create more beautiful files by this bootstrap and to know more about satish click below link</p>
+    <a class="btn btn-primary btn-lg" href="https://www.instagram.com/satishkumaryanala/" role="button" target="_blank">Learn more</a>
+</div>
+
+
+
+
+    <!-- script files connection -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+</body>
+</html>
